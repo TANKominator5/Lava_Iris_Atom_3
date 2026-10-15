@@ -1,0 +1,39 @@
+{
+  "scope": "Observed artifacts from one Iris Atom 3 investigation; identification hashes, not vendor authenticity attestations or universal device requirements",
+  "firmware_build_installed": "Lava_iris_Atom_3_S111_20160303",
+  "original_boot": {
+    "bytes": 12582912,
+    "independent_reads": 2,
+    "sha256": "ca752228581539929241493325508c0a4beb453b75b14dc3842f7c7b3cb740db"
+  },
+  "final_magisk24_boot": {
+    "bytes": 12582912,
+    "sha256": "c9bb712c2a718c546b989baf1fa1284ae679a5c7e0c29952971c44a5a2ebd7f1",
+    "verified_against_installed_partition_after_reboot": true
+  },
+  "experimental_magisk25_boot": {
+    "sha256": "3a77af2a99843dfbc7d953702b364b0af0f6084627fc467ce075d83bc8741ecc",
+    "status": "Initial core root succeeded; manager compatibility failed"
+  },
+  "experimental_magisk23_boot": {
+    "sha256": "13d3210843c04c252c7e8adb8ef1b629242fe80d80d79a5c177114fd61c440db",
+    "status": "Did not pass post-reboot daemon/root check"
+  },
+  "official_magisk_apks": {
+    "24.3": "8e37f8119b03a2d3289cb8dd5b484ca67dd9e76c84b29fc9d6fe5f741a1b8916",
+    "25.2": "0bdc32918b6ea502dca769b1c7089200da51ea1def170824c2812925b426d509",
+    "23.0": "079bc3a7f67413cb12509d1b811958dd7e7c7fb593d3f0507954fea72077b524"
+  },
+  "stock_ram_loaders_from_S111_20160326": {
+    "fdl1": {
+      "bytes": 20797,
+      "base": "0x50000000",
+      "sha256": "b3c6873300387bc00564248590983c13f48e9b5dbb07b65430faee3134081504"
+    },
+    "fdl2": {
+      "bytes": 488512,
+      "base": "0x9f000000",
+      "sha256": "ea8f7a8c15f571b254f812f8240cbb8b90e69a00d344ad779937282e2575aa54"
+    }
+  }
+}
