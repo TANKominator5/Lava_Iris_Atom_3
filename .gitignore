@@ -1,0 +1,35 @@
+# Deny by default: this working directory also holds private recovery material.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/docs/
+!/tools/
+!/tests/
+!/evidence/
+!/publishing/
+
+# Defense in depth inside the public directories.
+**/__pycache__/
+**/*.py[cod]
+**/.venv/
+**/node_modules/
+**/*.img
+**/*.bin
+**/*.apk
+**/*.pac
+**/*.zip
+**/*.rar
+**/*.7z
+**/*.exe
+**/*.dll
+**/*.partial
+**/*.part
+**/*.db
+**/*.sqlite*
+**/.env
+**/session.json
+**/transcript.md
+
+# Root/ and Performance_Tuning/ remain local and are intentionally not allowlisted.
+# New downloads, captures, generated reports and device images belong in _local/.
