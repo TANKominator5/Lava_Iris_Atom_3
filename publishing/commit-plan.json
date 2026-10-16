@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "remote": "https://github.com/TANKominator5/Lava_Iris_Atom_3.git",
+  "timezone": "+05:30",
+  "commit_body": "Notes, tools and observed results for the Lava Iris Atom 3 rooting investigation.",
+  "commits": [
+    {
+      "date": "2026-10-15T19:04:00+05:30",
+      "subject": "docs: introduce the Lava Iris Atom 3 rooting investigation",
+      "paths": [".gitignore", ".gitattributes", "README.md", "docs/01-scope-and-safety.md"]
+    },
+    {
+      "date": "2026-10-15T19:47:00+05:30",
+      "subject": "docs: identify the exact hardware and March 3 firmware",
+      "paths": ["docs/02-device-identification.md", "tools/common.py", "tools/collect_baseline.py"]
+    },
+    {
+      "date": "2026-10-15T20:33:00+05:30",
+      "subject": "docs: inspect available firmware and reject a mismatched boot image",
+      "paths": ["docs/03-firmware-research.md", "tools/inspect_pac.py", "tools/boot_image.py", "tests/test_images.py", "tools/compare_backups.py"]
+    },
+    {
+      "date": "2026-10-15T21:26:00+05:30",
+      "subject": "docs: investigate Fastboot limitations and the failed RAM boot",
+      "paths": ["docs/04-fastboot-investigation.md"]
+    },
+    {
+      "date": "2026-10-15T22:14:00+05:30",
+      "subject": "docs: diagnose Windows USB drivers and prepare an exact-ID driver",
+      "paths": ["docs/05-windows-drivers.md", "tools/lava-download.cfg"]
+    },
+    {
+      "date": "2026-10-15T23:08:00+05:30",
+      "subject": "docs: distinguish the boot-ROM interface from other download connections",
+      "paths": ["docs/06-download-modes.md"]
+    },
+    {
+      "date": "2026-10-15T23:56:00+05:30",
+      "subject": "feat: establish the legacy Spreadtrum version handshake",
+      "paths": ["docs/07-legacy-protocol.md", "tools/legacy_protocol.py", "tools/usb_transport.py", "tools/probe_usb.py", "tools/requirements-usb.txt", "tests/test_protocol.py"]
+    },
+    {
+      "date": "2026-10-16T00:51:00+05:30",
+      "subject": "feat: handle RAM-loader USB re-enumeration for boot readback",
+      "paths": ["docs/08-ram-loaders.md", "tools/read_boot.py", "tests/test_readback.py"]
+    },
+    {
+      "date": "2026-10-16T01:52:00+05:30",
+      "subject": "docs: verify two independent backups of the original boot partition",
+      "paths": ["docs/09-original-boot-backup.md", "evidence/artifact-hashes.json"]
+    },
+    {
+      "date": "2026-10-16T11:07:00+05:30",
+      "subject": "feat: patch the original boot image and verify preserved components",
+      "paths": ["docs/10-image-patching.md", "tools/prepare_magisk.py", "tools/verify_boot.py"]
+    },
+    {
+      "date": "2026-10-16T11:54:00+05:30",
+      "subject": "docs: obtain initial root with Magisk v25.2 and investigate the blank app",
+      "paths": ["docs/11-magisk25-experiment.md"]
+    },
+    {
+      "date": "2026-10-16T12:47:00+05:30",
+      "subject": "docs: test Magisk v23 and reject the unreliable mixed-version setup",
+      "paths": ["docs/12-magisk23-experiment.md"]
+    },
+    {
+      "date": "2026-10-16T13:37:00+05:30",
+      "subject": "docs: achieve working root with matching Magisk v24.3 components",
+      "paths": ["docs/13-magisk24-solution.md", "tools/finish_magisk24.sh"]
+    },
+    {
+      "date": "2026-10-16T15:06:00+05:30",
+      "subject": "test: verify root after reboot and document the original-boot backup",
+      "paths": ["docs/14-verification.md", "tools/verify_root.py", "evidence/observed-results.md"]
+    },
+    {
+      "date": "2026-10-16T16:49:00+05:30",
+      "subject": "docs: publish a reproducible rooting guide and recovery instructions",
+      "paths": ["docs/15-recovery-and-reproduction.md", "docs/references.md", "docs/attribution.md", "docs/publication-and-privacy.md", "tests/test_safety.py", "tests/test_publication.py", "publishing/public-files.json", "publishing/commit-plan.json", "publishing/validate_publication.py", "publishing/publish_history.py", "publishing/Publish-RootingHistory.ps1", "publishing/README.md"]
+    }
+  ]
+}
